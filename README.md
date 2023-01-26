@@ -13,7 +13,12 @@ The scripts for generating the results of the ML solutions in the paper. This sc
 **Download Dataset and Code**
 1. Download [the sensing aided drone beam prediction dataset of DeepSense 6G/Scenario 23](https://deepsense6g.net/scenario-23/).
 2. Download (or clone) the repository into a directory.
-3. Extract the dataset into the repository directory 
+3. Extract the dataset into the repository directory
+
+**Generate Development Dataset**
+1. Run downsample_pwr_gen_train_test_data.py to generate the train/val/test set. It provides an option to use both the original beams and the downsamples beams.
+2. To generate the dataset with original (64) beams, update lines 94 and 155 to "df_new['unit1_beam'] = original_beam".
+3. This code generates the development dataset for both vision and position-aided beam prediction
 
 
 
