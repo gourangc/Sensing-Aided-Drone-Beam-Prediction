@@ -11,9 +11,9 @@ The scripts for generating the results of the ML solutions in the paper. This sc
 **To reproduce the results, please follow these steps:**
 
 **Download Dataset and Code**
-a. Download [the sensing aided drone beam prediction dataset of DeepSense 6G/Scenario 23](https://deepsense6g.net/scenario-23/).
-b. Download (or clone) the repository into a directory.
-c. Extract the dataset into the repository directory 
+1. Download [the sensing aided drone beam prediction dataset of DeepSense 6G/Scenario 23](https://deepsense6g.net/scenario-23/).
+2. Download (or clone) the repository into a directory.
+3. Extract the dataset into the repository directory 
 
 
 
