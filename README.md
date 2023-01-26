@@ -9,11 +9,12 @@ Millimeter-wave (mmWave) and terahertz (THz) communication systems typically dep
 The scripts for generating the results of the ML solutions in the paper. This script adopts Scenario 23 of DeepSense6G dataset.
 
 **To reproduce the results, please follow these steps:**
-**1. Download Dataset and Code**
+
+1. Download Dataset and Code
 a. Download [the sensing aided drone beam prediction dataset of DeepSense 6G/Scenario 23](https://deepsense6g.net/scenario-23/).
 b. Download (or clone) the repository into a directory.
 c. Extract the dataset into the repository directory 
-**2. Prepare Development Dataset**
+
 
 
 If you have any questions regarding the code and used dataset, please write to DeepSense 6G dataset forum https://deepsense6g.net/forum/ or contact [Gouranga Charan](mailto:gcharan@asu.edu?subject=[GitHub]%20Beam%20prediction%20implementation).
