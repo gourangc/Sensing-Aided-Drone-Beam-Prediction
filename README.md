@@ -18,7 +18,14 @@ The scripts for generating the results of the ML solutions in the paper. This sc
 **Generate Development Dataset**
 1. Run downsample_pwr_gen_train_test_data.py to generate the train/val/test set. It provides an option to use both the original beams and the downsamples beams.
 2. To generate the dataset with original (64) beams, update lines 94 and 155 to "df_new['unit1_beam'] = original_beam".
-3. This code generates the development dataset for both vision and position-aided beam prediction
+3. This code generates the development dataset for both vision and position-aided beam prediction and save in their respective folders.
+
+**ML Model Training**
+1. Run main_beam.py file under image_beam or pos_beam folder to train the respective models
+2. This code will train the ML model, save the checkpoint and analysis files
+
+**ML model Evaluation**
+1. Run main_beam_eval.py file
 
 
 
