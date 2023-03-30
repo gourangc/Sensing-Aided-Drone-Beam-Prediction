@@ -42,7 +42,7 @@ data_csv = './scenario23_dev/scenario23.csv'
 df = pd.read_csv(data_csv)
 image_data_lst = df['unit1_rgb'].values
 pwr_data_lst = df['unit1_pwr_60ghz'].values
-
+#original_beam = df['unit1_beam_index'].values
 
 
 ###############################################
@@ -50,9 +50,11 @@ pwr_data_lst = df['unit1_pwr_60ghz'].values
 #### updated beam indices
 ###############################################
 updated_beam = []
+original_beam = []
 for entry in pwr_data_lst:
     data_to_read = f'./{root_folder}{entry[1:]}'
     pwr_data = np.loadtxt(data_to_read)
+    original_beam.append(np.argmax(pwr_data)+1)
     updated_pwr = []
     j = 0
     while j < (len(pwr_data)- 1):
